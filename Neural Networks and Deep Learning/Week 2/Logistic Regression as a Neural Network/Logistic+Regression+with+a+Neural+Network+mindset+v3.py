@@ -109,7 +109,7 @@ def model(x_train, y_train, x_test, y_test, it = 2000, rate = 0.5, cost = False)
 
 	return prey_test
 
-prey_test = model(train_set_x, train_set_y, test_set_x, test_set_y, it = 20000, rate = 0.004, cost = True)
+prey_test = model(train_set_x, train_set_y, test_set_x, test_set_y, it = 100000, rate = 0.005, cost = True)
 
 index = 1
 plt.imshow(test_set_x[:, index].reshape((num_px, num_px, 3)))
